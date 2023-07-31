@@ -1,0 +1,133 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #212121;
+  color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+}
+
+.kanban-column {
+  flex: 1;
+  background-color: #2c2c2c;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.task-list {
+  min-height: 100px;
+  background-color: #3c3c3c;
+  border: 1px solid #555;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.add-task {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.add-task input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #f0f0f0;
+  background-color: #3c3c3c;
+}
+
+.add-task button {
+  padding: 8px 15px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color: #0056b3;
+}
+
+.task {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr 0.5fr;
+  grid-template-rows: 0.4fr;
+  align-items: center;
+  background-color: #3c3c3c;
+  border: 1px solid #555;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: grab;
+  color: #f0f0f0;
+}
+
+.task:active {
+  cursor: grabbing;
+}
+
+.task-content {
+  display: flex;
+  justify-content: flex-start;
+  width: 70%;
+}
+
+.delete-button,
+.edit-button {
+  padding: 5px 10px;
+  color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  margin-left: 5px;
+}
+
+.delete-button:hover {
+  background-color: #b22a37;
+}
+
+.edit-button {
+  background-color: #28a745;
+  margin-left: 10px;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.kanban-column h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #555;
+  text-align: center;
+}
+
+.kanban-column:not(:first-child) {
+  margin-left: 20px;
+}
+
+.task .buttons {
+  align-items: center;
+}
+
+.flex-display {
+  display: flex;
+}
