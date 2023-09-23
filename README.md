@@ -31,6 +31,9 @@ We have exciting plans for future releases of Kanban Board App:
 
 Stay tuned for updates! 🚀
 
+## License
+Kanban Board App 1.0 is licensed under the [MIT License](https://opensource.org/license/mit/). You are free to use, modify, and distribute it as you see fit.
+
 ---
 
 Simplify your project management with Kanban Board App 1.0! 📊✅
