@@ -124,16 +124,6 @@ document.querySelector(".add-task").addEventListener("keypress", function (e) {
   }
 });
 
-window.addEventListener("load", () => {
-  document.addEventListener("contextmenu", (e) => e.preventDefault(), false);
-  document.addEventListener("keydown", (e) => {
-    if (e.ctrlKey || e.keyCode == 123) {
-      e.stopPropagation();
-      e.preventDefault();
-    }
-  });
-});
-
 const header = document.getElementById("header");
 header.addEventListener("mouseover", () => {
   header.style.cursor = "pointer";
